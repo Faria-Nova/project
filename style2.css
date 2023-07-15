@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+.Search-box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.SearchText {
+    width: 0rem;
+    border-radius: 3rem;
+    border: none;
+    outline: none;
+    transition: all 0.2s linear;
+
+}
+.SearchText:focus{
+    outline: none;
+}
+.SearchBtn{
+    width: 3rem;
+    height: 3rem;
+    background-color: blue;
+    border-radius: 3rem;
+    color: #ffff;
+    position: absolute;
+    right: 1rem;
+    display: grid;
+    place-items: center;
+}
+.Search-box:hover > .SearchText{
+    width: 25rem;
+    padding: 1rem;
+    box-shadow: 0 2rem 2 rem -1.5rem rgba(0, 0, 0, 0.5);
+}
+.Search-box:hover > .SearchBtn{
+    background: #fff;
+    color: royalblue;
+}
